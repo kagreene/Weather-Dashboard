@@ -6,5 +6,6 @@ const __dirname = path.dirname(__filename);
 const router = Router();
 
 // TODO: Define route to serve index.html
-
+//Are we supposed to be using fetch for this??
+router.get('*',  )
 export default router;

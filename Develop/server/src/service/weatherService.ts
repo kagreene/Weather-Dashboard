@@ -3,7 +3,8 @@ dotenv.config();
 
 // TODO: Define an interface for the Coordinates object
 interface Coordinates {
-
+  latitude: number;
+  longitude: number; 
 }
 // TODO: Define a class for the Weather object
 class Weather {
@@ -15,7 +16,11 @@ class WeatherService {
   baseURL : string;
   APIKey: string;
   cityName: string;
-    
+    constructor( baseURL: string, APIKey: string, cityName: string){
+      this.baseURL = baseURL;
+      this.APIKey = APIKey;
+      this.cityName = cityName;
+    }
   // TODO: Create fetchLocationData method
   // private async fetchLocationData(query: string) {}
   // TODO: Create destructureLocationData method

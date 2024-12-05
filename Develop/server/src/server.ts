@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 
 // TODO: Implement middleware to connect the routes
-//Need to add anything here?? 
+
 app.use(routes);
 
 // Start the server on the port

@@ -14,9 +14,7 @@ app.use((req, _res, next) => {
     next();
   });
 // TODO: Serve static files of entire client dist folder
-
-app.use(express.static(path.resolve( '../../client/dist')))
-
+app.use(express.static( '../client/dist'))
 // TODO: Implement middleware for parsing JSON and urlencoded form data
 //Look at Activity 25 for middleware examples 
 
